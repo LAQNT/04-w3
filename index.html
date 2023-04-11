@@ -18,9 +18,12 @@
         <div class="row text-center">
             <h1>Users</h1>
         </div>
-
+        
         <div class="row">
-            <div class="form-floating mt-5">
+            <button type="button" class="btn btn-dark mt-4" id="btnNames">Names list</button>
+            <div class="usersNames"></div>
+
+            <div class="form-floating mt-4 px-0">
                 <select id="filter" class="form-select" aria-label="Floating label select example">
                     <option value="0" selected>Options</option>
                     <option value="1">Id</option>
@@ -33,16 +36,18 @@
                 <label for="floatingSelect">Select to filter</label>
             </div>
             
-            <div class="form-group mt-4">
+            <div class="form-group mt-4 px-0">
                 <label for="exampleFormControlInput1">Search</label>
                 <input type="text" class="form-control" id="search" placeholder="Type something">
-              </div>
+            </div>
+            
             
 
         </div>
 
         <div class="row mt-5">
-            <div class="container">
+            <button type="button" class="col-2 btn btn-light mt-4" id="btnSort">Sort names</button>
+            <div class="container px-0">
                 <table class="table table-hover">
                     <thead>
                         <tr>
